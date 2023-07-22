@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-starts a Flask web application
+A Flask web application that displays states and cities listed in alphabetical order.
 """
 
 from flask import Flask, render_template
@@ -11,7 +11,6 @@ app = Flask(__name__)
 
 @app.route('/cities_by_states', strict_slashes=False)
 def cities_by_states():
-    """display the states and cities listed in alphabetical order"""
     states = storage.all("State").values()
     return render_template('8-cities_by_states.html', states=states)
 
