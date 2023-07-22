@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Contains the FileStorage class
+Contains the FileStorage class for serializing and 
+deserializing instances to/from a JSON file.
 """
 
 import json
