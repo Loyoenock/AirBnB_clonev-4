@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-starts a Flask web application
+Starts a Flask web application with multiple routes.
 """
 
 from flask import Flask
